@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <h1>kichu ekta</h1>
       <h2>shahin</h2>
+      <h2>shahin</h2>
     </div>
   );
 }
