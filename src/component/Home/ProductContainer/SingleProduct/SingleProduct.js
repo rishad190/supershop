@@ -5,17 +5,17 @@ import { addToCart } from "../../../../Redux/actions/cartAction";
 
 const SingleProduct = (props) => {
   const dispatch = useDispatch();
-  const { image, country, salary, id } = props.pd;
+  const { imageURL, name, price, _id } = props.pd;
 
   return (
     <div className="col-md-4 mb-4 d-flex justify-content-center ">
       <div className="card" style={{ width: "18rem" }}>
-        <img src={image} className="card-img-top" alt="..." />
+        <img src={imageURL} className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title text-center">{country}</h5>
-          <h4 className="text-center">$ {salary}</h4>
+          <h5 className="card-title text-center">{name}</h5>
+          <h4 className="text-center">$ {price}</h4>
           <div className="d-flex justify-content-around align-items-center">
-            <Link to={`/productDetails/${id}`} className="btn btn-primary">
+            <Link to={`/productDetails/${_id}`} className="btn btn-primary">
               Details
             </Link>
             <button

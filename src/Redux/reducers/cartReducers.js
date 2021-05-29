@@ -1,9 +1,13 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from "../actions/cartAction";
+import {
+  ADD_TO_CART,
+  REMOVE_FROM_CART,
+  ADD_PRODUCT,
+} from "../actions/cartAction";
 import player from "../../component/fakeData/fakeData.json";
 
 const initalState = {
   cart: [],
-  product: player,
+  product: [],
 };
 const cartReducers = (state = initalState, action) => {
   switch (action.type) {
@@ -20,6 +24,12 @@ const cartReducers = (state = initalState, action) => {
       };
       return newRemoveCart;
 
+    case ADD_PRODUCT:
+      const product = {
+        ...state,
+        product: action.id,
+      };
+      return product;
     default:
       return state;
   }

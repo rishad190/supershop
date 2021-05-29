@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { allProductAdd } from "../../../Redux/actions/cartAction";
 import SingleProduct from "./SingleProduct/SingleProduct";
 
 const ProductContainer = () => {
-  const player = useSelector((state) => {
+  const product = useSelector((state) => {
     return state.product;
   });
-  const [allProduct, setAllProduct] = useState([]);
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    fetch(
-      "https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League"
-    )
+    fetch("https://pure-bayou-34237.herokuapp.com/items")
       .then((res) => res.json())
       .then((data) => {
-        setAllProduct(data.teams);
+        dispatch(allProductAdd(data));
       });
-  }, []);
+  }, [dispatch]);
+  console.log("product", product);
   return (
     <div>
       <div className="d-flex justify-content-center align-items-center flex-column mt-3">
@@ -24,8 +25,8 @@ const ProductContainer = () => {
         <h3 style={{ fontWeight: "900" }}>available today</h3>
       </div>
       <div className="row container m-auto pt-4">
-        {player.map((pd) => (
-          <SingleProduct pd={pd} key={pd.id} />
+        {product.map((pd) => (
+          <SingleProduct pd={pd} key={pd._id} />
         ))}
       </div>
     </div>

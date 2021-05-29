@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import Navbar from "../../Shared/Navbar/Navbar";
 import CartBox from "../CartBox/CartBox";
+import CartPriceDetails from "../CartPriceDetails/CartPriceDetails";
 
 const CartHome = () => {
   const product = useSelector((state) => {
@@ -17,7 +18,9 @@ const CartHome = () => {
               <CartBox pd={pd} key={pd.id}></CartBox>
             ))}
           </div>
-          <div className="col-md-4"></div>
+          <div className="col-md-4">
+            <CartPriceDetails></CartPriceDetails>
+          </div>
         </div>
       </div>
     </div>
