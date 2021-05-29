@@ -16,7 +16,7 @@ const cartReducers = (state = initalState, action) => {
     case REMOVE_FROM_CART:
       const newRemoveCart = {
         ...state,
-        cart: state.cart.filter((cart) => cart.id !== action.id),
+        cart: state.cart.filter((pd) => pd.id !== action.id.id),
       };
       return newRemoveCart;
 

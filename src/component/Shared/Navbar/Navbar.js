@@ -51,8 +51,10 @@ const Navbar = () => {
             <button className="btn btn-danger">Login</button>
           </li>
           <li className="nav-item text-white p-1">
-            <ShoppingBasketIcon></ShoppingBasketIcon>
-            <span>{product.length}</span>
+            <Link to="/cart" className="nav-link text-white">
+              <ShoppingBasketIcon></ShoppingBasketIcon>
+              <span>{product.length}</span>
+            </Link>
           </li>
         </ul>
       </div>

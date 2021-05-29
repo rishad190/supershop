@@ -1,8 +1,7 @@
 import React from "react";
-import {
-  BrowserRouter as Router, Switch, Route, Link
-} from "react-router-dom";
-import Home from './component/Home/Home';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import CartHome from "./component/Cart/CartHome/CartHome";
+import Home from "./component/Home/Home";
 import ProductDetail from "./component/Home/ProductContainer/ProductDetail/ProductDetail";
 
 function App() {
@@ -15,12 +14,14 @@ function App() {
         <Route path="/home">
           <Home />
         </Route>
+        <Route path="/cart">
+          <CartHome />
+        </Route>
         <Route path="/productDetails/:idTeam">
           <ProductDetail />
         </Route>
       </Switch>
-    </Router >
-
+    </Router>
   );
 }
 
