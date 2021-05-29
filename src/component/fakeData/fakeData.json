@@ -1,0 +1,71 @@
+[{
+    "id": 1,
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "salary": 200000,
+    "image": "https://www.cricbuzz.com/a/img/v1/152x152/i1/c170899/tamim-iqbal.jpg",
+    "Role": "Batsman "
+  }, {
+    "id": 2,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "salary": 500000,
+    "image": "https://www.cricbuzz.com/a/img/v1/152x152/i1/c170912/shakib-al-hasan.jpg",
+    "Role": "Batting Allrounder "
+  }, {
+    "id": 3,
+    "name": "Mahmudullah",
+    "country": "Bangladesh",
+    "salary": 100000,
+    "image": "https://www.cricbuzz.com/a/img/v1/152x152/i1/c170905/mahmudullah.jpg",
+    "Role": "Batting Allrounder "
+  }, {
+    "id": 4,
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "salary": 400000,
+    "image": "https://www.cricbuzz.com/a/img/v1/152x152/i1/c170916/mushfiqur-rahim.jpg",
+    "Role": "WK-Batsman  "
+  }, {
+    "id": 5,
+    "name": "Mashrafe Mortaza",
+    "country": "Bangladesh",
+    "salary": 500000,
+    "image": "https://www.cricbuzz.com/a/img/v1/152x152/i1/c170920/mashrafe-mortaza.jpg",
+    "Role": "Bowler"
+  }, {
+    "id": 6,
+    "name": "Virat Kohli",
+    "country": "India",
+    "salary": 1500000,
+    "image": "https://www.cricbuzz.com/a/img/v1/152x152/i1/c170661/virat-kohli.jpg",
+    "Role": "Batsman "
+  }, {
+    "id": 7,
+    "name": "Rohit Sharma",
+    "country": "India",
+    "salary": 1000000,
+    "image": "https://www.cricbuzz.com/a/img/v1/152x152/i1/c170658/rohit-sharma.jpg",
+    "Role": "Batsman "
+  }, {
+    "id": 8,
+    "name": "Ravindra Jadeja",
+    "country": "India",
+    "salary": 500000,
+    "image": "https://www.cricbuzz.com/a/img/v1/152x152/i1/c170670/ravindra-jadeja.jpg",
+    "Role": "Bowling Allrounder  "
+  }, {
+    "id": 9,
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "salary": 600000,
+    "image": "https://www.cricbuzz.com/a/img/v1/152x152/i1/c170685/jasprit-bumrah.jpg",
+    "Role": "Bowler"
+  }, {
+    "id": 10,
+    "name": "Yuzvendra Chahal",
+    "country": "India",
+    "salary": 100000,
+    "image": "https://www.cricbuzz.com/a/img/v1/152x152/i1/c170690/yuzvendra-chahal.jpg",
+    "Role": "Bowler"
+  }]
