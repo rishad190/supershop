@@ -1,35 +1,38 @@
-import {
-  ADD_TO_CART,
-  REMOVE_FROM_CART,
-  ADD_PRODUCT,
-} from "../actions/cartAction";
-import player from "../../component/fakeData/fakeData.json";
+// import {
+//   ADD_TO_CART,
+//   REMOVE_FROM_CART,
+//   ADD_PRODUCT,
+// } from "../actions/cartAction";
+// import player from "../../component/fakeData/fakeData.json";
 
-const initalState = {
+const initialState = {
   cart: [],
   product: [],
 };
-const cartReducers = (state = initalState, action) => {
+const cartReducers = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_TO_CART:
+    case "ADD_TO_CART":{
       const newCart = {
         ...state,
         cart: [...state.cart, action.id],
       };
       return newCart;
-    case REMOVE_FROM_CART:
+    }
+    case "REMOVE_FROM_CART":{
       const newRemoveCart = {
         ...state,
-        cart: state.cart.filter((pd) => pd.id !== action.id.id),
+        cart: state.cart.filter(pd => pd._id !== action.payload._id),
       };
       return newRemoveCart;
+    }
 
-    case ADD_PRODUCT:
+    case "ADD_PRODUCT":{
       const product = {
         ...state,
         product: action.id,
       };
       return product;
+    }
     default:
       return state;
   }
