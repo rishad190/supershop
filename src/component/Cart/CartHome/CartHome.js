@@ -19,7 +19,7 @@ const CartHome = () => {
             ))}
           </div>
           <div className="col-md-4">
-            <CartPriceDetails></CartPriceDetails>
+            <CartPriceDetails product={product}></CartPriceDetails>
           </div>
         </div>
       </div>
