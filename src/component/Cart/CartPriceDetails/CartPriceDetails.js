@@ -11,6 +11,7 @@ const CartPriceDetails = (props) => {
     <div>
       <h2>Order Price</h2>
       <h3>Total ${total}</h3>
+      <button className="btn btn-success">Shipment</button>
     </div>
   );
 };
